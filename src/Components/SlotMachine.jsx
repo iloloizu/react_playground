@@ -1,7 +1,16 @@
 import React from 'react'
 
 function SlotMachine(props) {
-   console.log(props)
+
+    const stack = []
+    stack.push(1)
+    stack.push(2)
+    stack.push(3)
+    stack.push(4)
+    stack.push(5)
+    stack.pop(stack.length)
+    console.log(stack)
+    
   return (
     <div>
         <h4>{props.k1} {props.k2} {props.k3}</h4>
